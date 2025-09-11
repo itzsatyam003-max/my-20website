@@ -39,13 +39,20 @@ export default function Hero() {
             Create <span className="text-primary">100% Free</span> Resume & CV
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-foreground/80">
-            Build Professional Resume and CV Effortlessly – Showcase Your Skills, Impress Employers, and Get Hired Faster!
+            Build Professional Resume and CV Effortlessly – Showcase Your
+            Skills, Impress Employers, and Get Hired Faster!
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <Link to="/create-resume" className="btn-gradient inline-flex items-center rounded-full px-6 py-3 text-base font-semibold text-white shadow-lg">
+            <Link
+              to="/create-resume"
+              className="btn-gradient inline-flex items-center rounded-full px-6 py-3 text-base font-semibold text-white shadow-lg"
+            >
               Create Now
             </Link>
-            <a href="#steps" className="inline-flex items-center rounded-full border px-6 py-3 text-base font-semibold hover:bg-foreground/5">
+            <a
+              href="#steps"
+              className="inline-flex items-center rounded-full border px-6 py-3 text-base font-semibold hover:bg-foreground/5"
+            >
               How it works
             </a>
           </div>

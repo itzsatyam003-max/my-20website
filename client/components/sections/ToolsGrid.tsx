@@ -1,19 +1,72 @@
-import { Edit3, PenTool, Signature, Share2, Search, GitMerge, ArrowUpDown, Users, FileArchive, Repeat, FilePlus2, FileText } from "lucide-react";
+import {
+  Edit3,
+  PenTool,
+  Signature,
+  Share2,
+  Search,
+  GitMerge,
+  ArrowUpDown,
+  Users,
+  FileArchive,
+  Repeat,
+  FilePlus2,
+  FileText,
+} from "lucide-react";
 
-type Tool = { title: string; desc: string; Icon: React.ComponentType<{ className?: string }>; };
+type Tool = {
+  title: string;
+  desc: string;
+  Icon: React.ComponentType<{ className?: string }>;
+};
 
 const TOOLS: Tool[] = [
-  { title: "Edit PDF", desc: "Quickly edit and annotate PDFs online.", Icon: Edit3 },
+  {
+    title: "Edit PDF",
+    desc: "Quickly edit and annotate PDFs online.",
+    Icon: Edit3,
+  },
   { title: "Sign", desc: "eSign documents from anywhere.", Icon: PenTool },
-  { title: "Request signatures", desc: "Send a document for eSignature.", Icon: Signature },
-  { title: "Share", desc: "Instantly send PDFs for review and editing.", Icon: Share2 },
-  { title: "Find forms online", desc: "Browse the online library of forms.", Icon: Search },
+  {
+    title: "Request signatures",
+    desc: "Send a document for eSignature.",
+    Icon: Signature,
+  },
+  {
+    title: "Share",
+    desc: "Instantly send PDFs for review and editing.",
+    Icon: Share2,
+  },
+  {
+    title: "Find forms online",
+    desc: "Browse the online library of forms.",
+    Icon: Search,
+  },
   { title: "Merge", desc: "Combine multiple PDFs into one.", Icon: GitMerge },
-  { title: "Rearrange", desc: "Rearrange pages in a PDF document.", Icon: ArrowUpDown },
-  { title: "Collaborate", desc: "Exchange comments and edit PDFs collaboratively.", Icon: Users },
-  { title: "Compress", desc: "Compress PDFs to reduce their size.", Icon: FileArchive },
-  { title: "Convert", desc: "Convert PDFs into Word, Excel, JPG, or PPT files and vice versa.", Icon: Repeat },
-  { title: "Create from scratch", desc: "Start with a blank page.", Icon: FilePlus2 },
+  {
+    title: "Rearrange",
+    desc: "Rearrange pages in a PDF document.",
+    Icon: ArrowUpDown,
+  },
+  {
+    title: "Collaborate",
+    desc: "Exchange comments and edit PDFs collaboratively.",
+    Icon: Users,
+  },
+  {
+    title: "Compress",
+    desc: "Compress PDFs to reduce their size.",
+    Icon: FileArchive,
+  },
+  {
+    title: "Convert",
+    desc: "Convert PDFs into Word, Excel, JPG, or PPT files and vice versa.",
+    Icon: Repeat,
+  },
+  {
+    title: "Create from scratch",
+    desc: "Start with a blank page.",
+    Icon: FilePlus2,
+  },
   { title: "Edit DOC", desc: "Edit Word documents.", Icon: FileText },
 ];
 

@@ -10,7 +10,17 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
-import { About, CreateBiodata, CreateResume, FreeCourses, Privacy, Features, Tools, Portfolio, Contact } from "@/pages/Placeholders";
+import {
+  About,
+  CreateBiodata,
+  CreateResume,
+  FreeCourses,
+  Privacy,
+  Features,
+  Tools,
+  Portfolio,
+  Contact,
+} from "@/pages/Placeholders";
 
 const queryClient = new QueryClient();
 

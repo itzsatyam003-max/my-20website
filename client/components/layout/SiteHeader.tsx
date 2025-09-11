@@ -8,7 +8,7 @@ function NavItem({ to, children }: { to: string; children: React.ReactNode }) {
       className={({ isActive }) =>
         cn(
           "px-3 py-2 text-xs md:text-sm font-semibold tracking-wide uppercase text-white/90 hover:text-white",
-          isActive && "text-white underline underline-offset-8 decoration-2"
+          isActive && "text-white underline underline-offset-8 decoration-2",
         )
       }
     >
