@@ -27,3 +27,16 @@ export const About = () => (
 export const Privacy = () => (
   <Placeholder title="Privacy Policy" description="Read about how we protect your data and privacy." />
 );
+
+export const Features = () => (
+  <Placeholder title="Features" description="Overview of key features (placeholder)." />
+);
+export const Tools = () => (
+  <Placeholder title="Tools" description="Utilities and resources (placeholder)." />
+);
+export const Portfolio = () => (
+  <Placeholder title="Portfolio" description="Showcase your projects (placeholder)." />
+);
+export const Contact = () => (
+  <Placeholder title="Contact" description="Get in touch with us (placeholder)." />
+);
