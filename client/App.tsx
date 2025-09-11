@@ -28,6 +28,10 @@ const App = () => (
           <Route path="/free-computer-courses" element={<FreeCourses />} />
           <Route path="/about" element={<About />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/tools" element={<Tools />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
