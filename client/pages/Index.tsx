@@ -1,3 +1,5 @@
+import ToolsGrid from "@/components/sections/ToolsGrid";
+
 export default function Index() {
   return (
     <main>
@@ -9,6 +11,7 @@ export default function Index() {
           loading="eager"
         />
       </section>
+      <ToolsGrid />
     </main>
   );
 }
