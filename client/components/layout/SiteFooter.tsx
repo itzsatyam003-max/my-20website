@@ -6,17 +6,16 @@ export default function SiteFooter() {
       <div className="container py-12 grid gap-8 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground font-bold">RG</span>
-            <span className="text-lg font-semibold tracking-tight">Resume <span className="text-primary">Ground</span></span>
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground font-bold"><span>csc</span></span>
+            <span className="text-lg font-semibold tracking-tight"><span>begusarai</span></span>
           </div>
-          <p className="mt-4 text-sm text-foreground/70 max-w-xs">Build professional resumes and CVs effortlessly. 100% free, fast, and secure.</p>
+          <p className="mt-4 text-sm font-semibold text-foreground/80 max-w-xs">यहां CSC से जुड़े सभी कामों के लिए टूल उपलब्ध हैं</p>
         </div>
         <div>
           <h3 className="text-sm font-semibold mb-3">Useful Links</h3>
           <ul className="space-y-2 text-sm">
             <li><Link className="hover:text-primary" to="/">Home Page</Link></li>
-            <li><Link className="hover:text-primary" to="/create-resume">Create Resume/CV</Link></li>
-            <li><Link className="hover:text-primary" to="/free-computer-courses">Free Computer Courses</Link></li>
+            <li><Link className="hover:text-primary" to="/tools">Tolls</Link></li>
           </ul>
         </div>
         <div>
