@@ -51,11 +51,11 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative">
-          <div className="overflow-hidden rounded-2xl border bg-white/70 shadow-xl ring-1 ring-black/5">
+          <div className="aspect-[16/9] w-full overflow-hidden rounded-2xl">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F3db88c248e1149ad94412f9a6b970061%2F284e9ad182ad44c497f104f376077f3f?format=webp&width=800"
-              alt="Profile photo"
-              className="h-auto w-full object-cover"
+              src="https://cdn.builder.io/api/v1/image/assets%2F3db88c248e1149ad94412f9a6b970061%2F284e9ad182ad44c497f104f376077f3f?format=webp&width=1200"
+              alt="Satyam profile banner"
+              className="h-full w-full object-cover"
               loading="eager"
             />
           </div>
