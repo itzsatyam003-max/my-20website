@@ -91,7 +91,7 @@ export default function ToolsGrid() {
                 className={cn(
                   "inline-flex h-10 w-10 items-center justify-center rounded-md border bg-secondary text-foreground",
                   hasMobileIconBg &&
-                    'bg-[url("https://cdn.builder.io/api/v1/image/assets%2F58fdd6e3817b4e5895807a27ed6b349f%2F2912f90ee87f4a2c829321f8558dad94")] bg-center bg-cover lg:bg-none lg:bg-secondary'
+                    'max-[991px]:bg-[url("https://cdn.builder.io/api/v1/image/assets%2F58fdd6e3817b4e5895807a27ed6b349f%2F2912f90ee87f4a2c829321f8558dad94")] max-[991px]:bg-center max-[991px]:bg-cover min-[992px]:bg-none'
                 )}
               >
                 <Icon className="h-5 w-5" />
@@ -117,7 +117,7 @@ export default function ToolsGrid() {
               href={href}
               target={targetBlank ? "_blank" : undefined}
               rel={targetBlank ? "noopener noreferrer" : undefined}
-              className="h-full min-h-[120px] rounded-xl border bg-white p-4 shadow-sm transition-shadow hover:shadow-md cursor-pointer"
+              className="h-full min-h-[120px] rounded-xl border bg-white p-4 shadow-sm transition-shadow hover:shadow-md cursor-pointer pointer-events-auto flex"
             >
               {CardInner}
             </a>
