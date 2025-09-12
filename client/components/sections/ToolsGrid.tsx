@@ -111,7 +111,7 @@ const TOOLS: Tool[] = [
     title: "RESUM EDTI",
     desc: "Edit Word documents.",
     Icon: FileText,
-    href: "https://resum-edit.lovable.app/create-resume",
+    href: "https://resumbycsc.netlify.app/",
     targetBlank: true,
     emphasize: true,
   },
