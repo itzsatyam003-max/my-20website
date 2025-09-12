@@ -123,7 +123,7 @@ export default function ToolsGrid() {
   return (
     <section className="container py-12 md:py-16">
       <div className="grid items-stretch gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {TOOLS.map(({ title, desc, Icon, href, targetBlank, emphasize }) => {
+        {TOOLS.map(({ title, desc, Icon, href, targetBlank, emphasize, extraCardClassName }) => {
           const CardInner = (
             <div className="flex items-start gap-3">
               <div className="flex items-center justify-center text-foreground">
