@@ -20,6 +20,7 @@ type Tool = {
   href?: string;
   targetBlank?: boolean;
   emphasize?: boolean;
+  extraCardClassName?: string;
 };
 
 const TOOLS: Tool[] = [
@@ -31,37 +32,70 @@ const TOOLS: Tool[] = [
     targetBlank: true,
     emphasize: true,
   },
-  { title: "Sign", desc: "eSign documents from anywhere.", Icon: PenTool },
   {
-    title: "Request signatures",
+    title: "IMAGE TEXT",
+    desc: "eSign documents from anywhere.",
+    Icon: PenTool,
+    href: "https://www.imagetotext.info/",
+    targetBlank: true,
+    emphasize: true,
+  },
+  {
+    title: "RESIZE IMAGE",
     desc: "Send a document for eSignature.",
     Icon: Signature,
+    href: "https://www.resizepixel.com/reduce-image-in-kb",
+    targetBlank: true,
+    emphasize: true,
   },
   {
-    title: "Share",
+    title: "PDF TOOLS",
     desc: "Instantly send PDFs for review and editing.",
     Icon: Share2,
+    href: "https://www.ilovepdf.com/merge_pdf",
+    targetBlank: true,
+    emphasize: true,
   },
   {
-    title: "Find forms online",
+    title: "PAN BY NSDL",
     desc: "Browse the online library of forms.",
     Icon: Search,
+    href: "https://onlineservices.proteantech.in/paam/endUserRegisterContact.html",
+    targetBlank: true,
+    emphasize: true,
   },
-  { title: "Merge", desc: "Combine multiple PDFs into one.", Icon: GitMerge },
   {
-    title: "Rearrange",
+    title: "ISTENT PAN",
+    desc: "Combine multiple PDFs into one.",
+    Icon: GitMerge,
+    href: "https://www.incometax.gov.in/iec/foportal/",
+    targetBlank: true,
+    emphasize: true,
+  },
+  {
+    title: "PAN DOCUMENTS",
     desc: "Rearrange pages in a PDF document.",
     Icon: ArrowUpDown,
+    href: "https://pancardresizer.com/",
+    targetBlank: true,
+    emphasize: true,
   },
   {
-    title: "Collaborate",
+    title: "ADDHAR CARD",
     desc: "Exchange comments and edit PDFs collaboratively.",
     Icon: Users,
+    href: "https://uidai.gov.in/",
+    targetBlank: true,
+    emphasize: true,
+    extraCardClassName: "max-[991px]:pt-[15px]",
   },
   {
-    title: "Compress",
+    title: "BILL JANRATER",
     desc: "Compress PDFs to reduce their size.",
     Icon: FileArchive,
+    href: "https://bill-ganrater.netlify.app/",
+    targetBlank: true,
+    emphasize: true,
   },
   {
     title: "Convert",
@@ -73,7 +107,14 @@ const TOOLS: Tool[] = [
     desc: "Start with a blank page.",
     Icon: FilePlus2,
   },
-  { title: "Edit DOC", desc: "Edit Word documents.", Icon: FileText },
+  {
+    title: "RESUM EDTI",
+    desc: "Edit Word documents.",
+    Icon: FileText,
+    href: "https://resum-edit.lovable.app/create-resume",
+    targetBlank: true,
+    emphasize: true,
+  },
 ];
 
 import { cn } from "@/lib/utils";
@@ -109,14 +150,14 @@ export default function ToolsGrid() {
               href={href}
               target={targetBlank ? "_blank" : undefined}
               rel={targetBlank ? "noopener noreferrer" : undefined}
-              className="h-full min-h-[120px] rounded-xl border bg-white p-4 shadow-sm transition-shadow hover:shadow-md cursor-pointer pointer-events-auto flex"
+              className={cn("h-full min-h-[120px] rounded-xl border bg-white p-4 shadow-sm transition-shadow hover:shadow-md cursor-pointer pointer-events-auto flex", extraCardClassName)}
             >
               {CardInner}
             </a>
           ) : (
             <div
               key={title}
-              className="h-full min-h-[120px] rounded-xl border bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
+              className={cn("h-full min-h-[120px] rounded-xl border bg-white p-4 shadow-sm transition-shadow hover:shadow-md", extraCardClassName)}
             >
               {CardInner}
             </div>
