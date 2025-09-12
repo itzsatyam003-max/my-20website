@@ -103,9 +103,12 @@ const TOOLS: Tool[] = [
     Icon: Repeat,
   },
   {
-    title: "Create from scratch",
+    title: "QR CODE TOOL",
     desc: "Start with a blank page.",
     Icon: FilePlus2,
+    href: "https://qr-code.io/qr?step=1",
+    targetBlank: true,
+    emphasize: true,
   },
   {
     title: "RESUM EDTI",
