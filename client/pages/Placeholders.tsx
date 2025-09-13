@@ -44,7 +44,7 @@ export const FreeCourses = () => (
 export const About = () => (
   <section id="about" aria-labelledby="about-heading" className="py-12 md:py-16">
     <div className="container">
-      <h2 id="about-heading" className="text-2xl md:text-3xl font-bold">Begusarai CSC — हमारे बारे में</h2>
+      <h2 id="about-heading" className="font-bold text-[15px] text-[#E2230F] lg:text-[30px] lg:leading-[36px] lg:text-foreground">Begusarai CSC — हमारे बारे में</h2>
       <p className="mt-4">
         <strong>Begusarai CSC</strong> में आपका हार्दिक स्वागत है। यहाँ हम Begusarai और आसपास के क्षेत्र के लोगों के लिए डिजिटल सेवाओं और उपयोगी ऑनलाइन टूल्स को आसान और सुलभ बनाते हैं। हमारा उद्देश्य CSC ऑपरेटरों और आम नागरिकों के रोज़मर्रा के कागजी कार्यों को तेज़, सरल और भरोसेमंद बनाना है।
       </p>
@@ -53,7 +53,7 @@ export const About = () => (
       <ul className="mt-3 list-disc pl-5 space-y-1">
         <li>PDF एडिटिंग, कन्वर्ज़न और साइज बदलना (Compress, Convert, Edit)</li>
         <li>PAN / Aadhar संबंधित टूल्स और फॉर्म सपोर्ट</li>
-        <li>रिज़्यूमे एडिटिंग, QR कोड जनरेशन और इम��ज बैकग्राउंड रिमूवल</li>
+        <li>रिज़्यूमे एडिटिंग, QR कोड जनरेशन और इमेज बैकग्राउंड रिमूवल</li>
         <li>दस्तावेज़ जोड़ना, पेज रियरेंज करना आदि</li>
       </ul>
 
