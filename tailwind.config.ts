@@ -60,6 +60,7 @@ export default {
       },
       fontFamily: {
         sans: [
+          "Fredoka",
           "Poppins",
           "ui-sans-serif",
           "system-ui",
