@@ -63,7 +63,7 @@ export const About = () => (
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />PDF एडिटिंग, कन्वर्ज़न और साइज बदलना (Compress, Convert, Edit)</li>
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />PAN / Aadhar संबंधित टूल्स और फॉर्म सपोर्ट</li>
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />रिज़्यूमे एडिटिंग, QR कोड जनरेशन और इमेज बैकग्राउंड रिमूवल</li>
-            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />दस्तावेज़ जोड़ना, ��ेज रियरेंज करना आदि</li>
+            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />दस्तावेज़ जोड़ना, ��ेज रिय��ेंज करना आदि</li>
           </ul>
         </div>
 
@@ -112,11 +112,26 @@ export const Features = () => (
     description="Overview of key features (placeholder)."
   />
 );
+import ToolsGrid from "@/components/sections/ToolsGrid";
+
 export const Tools = () => (
-  <Placeholder
-    title="Tools"
-    description="Utilities and resources (placeholder)."
-  />
+  <section className="container py-12 md:py-16">
+    <h1 className="text-3xl font-bold">Tools</h1>
+    <p className="mt-2 text-foreground/70">CSC के लिए उपयोगी टूल्स</p>
+    <div className="mt-6">
+      <ToolsGrid />
+    </div>
+    <div className="mt-8">
+      <a
+        href="https://api.whatsapp.com/send/?phone=917520663547&text=hello+satyam&type=phone_number&app_absent=0"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center rounded-md bg-[#094BF3] lg:bg-foreground px-4 py-2 text-sm font-semibold text-background"
+      >
+        Contact
+      </a>
+    </div>
+  </section>
 );
 export const Portfolio = () => (
   <section className="container py-14">
