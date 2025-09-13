@@ -19,7 +19,7 @@ function NavItem({ to, children }: { to: string; children: React.ReactNode }) {
 
 export default function SiteHeader() {
   return (
-    <header className="w-full bg-neutral-900 text-white">
+    <header className="w-full bg-gradient-to-r from-pink-600 via-purple-600 to-rose-500 text-white shadow">
       <div className="container flex h-10 items-center justify-between md:h-12">
         <div className="text-sm font-extrabold tracking-widest">BEGUSARAI</div>
         <nav className="flex items-center gap-2 md:gap-4">
