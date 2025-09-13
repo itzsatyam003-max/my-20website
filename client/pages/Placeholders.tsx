@@ -43,32 +43,68 @@ export const FreeCourses = () => (
 );
 export const About = () => (
   <section id="about" aria-labelledby="about-heading" className="py-12 md:py-16">
-    <div className="container">
-      <h2 id="about-heading" className="font-bold text-[15px] text-[#E2230F] lg:text-[30px] lg:leading-[36px] lg:text-foreground">Begusarai CSC — हमारे बारे में</h2>
-      <p className="mt-4">
-        <strong>Begusarai CSC</strong> में आपका हार्दिक स्वागत है। यहाँ हम Begusarai और आसपास के क्षेत्र के लोगों के लिए डिजिटल सेवाओं और उपयोगी ऑनलाइन टूल्स को आसान और सुलभ बनाते हैं। हमारा उद्देश्य CSC ऑपरेटरों और आम नागरिकों के रोज़मर्रा के कागजी कार्यों को तेज़, सरल और भरोसेमंद बनाना है।
-      </p>
+    <div className="container space-y-8 md:space-y-10">
+      <div className="rounded-xl border bg-white p-6 md:p-10 shadow-sm">
+        <h2
+          id="about-heading"
+          className="font-bold text-[15px] text-[#E2230F] lg:text-[30px] lg:leading-[36px] lg:text-foreground"
+        >
+          Begusarai CSC — हमारे बारे में
+        </h2>
+        <p className="mt-4 max-w-3xl text-foreground/80">
+          <strong>Begusarai CSC</strong> में आपका हार्दिक स्वागत है। यहाँ हम Begusarai और आसपास के क्षेत्र के लोगों के लिए डिजिटल सेवाओं और उपयोगी ऑनलाइन टूल्स को आसान और सुलभ बनाते हैं। हमारा उद्देश्य CSC ऑपरेटरों और आम नागरिकों के रोज़मर्रा के कागजी कार्यों को त��ज़, सरल और भरोसेमंद बनाना है।
+        </p>
+      </div>
 
-      <h3 className="mt-8 text-xl font-semibold">हम जो सेवा देते हैं:</h3>
-      <ul className="mt-3 list-disc pl-5 space-y-1">
-        <li>PDF एडिटिंग, कन्वर्ज़न और साइज बदलना (Compress, Convert, Edit)</li>
-        <li>PAN / Aadhar संबंधित टूल्स और फॉर्म सपोर्ट</li>
-        <li>रिज़्यूमे एडिटिंग, QR कोड जनरेशन और इमेज बैकग्राउंड रिमूवल</li>
-        <li>दस्तावेज़ जोड़ना, पेज रियरेंज करना आदि</li>
-      </ul>
+      <div className="grid gap-6 md:grid-cols-3">
+        <div className="rounded-lg border bg-white p-6">
+          <h3 className="text-lg font-semibold">हम जो सेवा देते हैं</h3>
+          <ul className="mt-3 space-y-2 text-sm text-foreground/80">
+            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />PDF एडिटिंग, कन्वर्ज़न और साइज बदलना (Compress, Convert, Edit)</li>
+            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />PAN / Aadhar संबंधित टूल्स और फॉर्म सपोर्ट</li>
+            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />रिज़्यूमे एडिटिंग, QR कोड जनरेशन और इमेज बैकग्राउंड रिमूवल</li>
+            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />दस्तावेज़ जोड़ना, ��ेज रियरेंज करना आदि</li>
+          </ul>
+        </div>
 
-      <h3 className="mt-8 text-xl font-semibold">हमारी खास बात:</h3>
-      <ul className="mt-3 list-disc pl-5 space-y-1">
-        <li>लोकल फोकस — Begusarai समुदाय की ज़रूरतों के लिए बनाया गया</li>
-        <li>सहज इंटरफ़ेस — सरल और उपयोग में आसान</li>
-        <li>तेज़ समाधान — समय बचाने वाले टूल्स</li>
-        <li>भरोसेमंद — CSC ऑपरेटरों की आवश्यकताओं के अनुरूप</li>
-      </ul>
+        <div className="rounded-lg border bg-white p-6">
+          <h3 className="text-lg font-semibold">हमारी खास बात</h3>
+          <ul className="mt-3 space-y-2 text-sm text-foreground/80">
+            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />लोकल फोकस — Begusarai समुदाय की ज़रूरतों के लिए बनाया गया</li>
+            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />सहज इंटरफ़ेस — सरल और उपयोग में आसान</li>
+            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />तेज़ समाधान — समय बचाने वाले टूल्स</li>
+            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />भरोसेमंद — CSC ऑपरेटरों की आवश्यकताओं के अनुरूप</li>
+          </ul>
+        </div>
 
-      <h3 className="mt-8 text-xl font-semibold">हमारा मिशन</h3>
-      <p className="mt-3">स्थानीय समुदाय को डिजिटल रूप से सशक्त बनाना — ताकि सरकारी और निजी दस्तावेज़ आसानी से, तेज़ और सुरक्षित तरीके से पूरे हो सकें।</p>
+        <div className="rounded-lg border bg-white p-6">
+          <h3 className="text-lg font-semibold">हमारा मिशन</h3>
+          <p className="mt-3 text-sm text-foreground/80">
+            स्थानीय समुदाय को डिजिटल रूप से सशक्त बनाना — ताकि सरकारी और निजी दस्तावेज़ आसानी से, तेज़ और सुरक्षित तरीके से पूरे हो सकें।
+          </p>
+          <div className="mt-4">
+            <Link
+              to="/contact"
+              className="inline-flex items-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90"
+            >
+              संपर्क करें
+            </Link>
+          </div>
+        </div>
+      </div>
 
-      <p className="mt-6">सुझाव या सहायता के लिए <Link to="/contact" className="text-primary underline underline-offset-4">संपर्क पेज</Link> पर जाएँ।</p>
+      <div className="rounded-lg border bg-primary/5 p-6 md:p-8">
+        <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+          <div>
+            <h4 className="text-base font-semibold">क्या आप किसी विशेष दस्तावेज़ में मदद चाहते हैं?</h4>
+            <p className="text-sm text-foreground/70">हमसे बात करें या सीधे टूल्स सेक्शन देखें।</p>
+          </div>
+          <div className="flex gap-3">
+            <Link to="/tools" className="inline-flex items-center rounded-md border px-4 py-2 text-sm font-semibold">Tools</Link>
+            <Link to="/contact" className="inline-flex items-center rounded-md bg-foreground px-4 py-2 text-sm font-semibold text-background">Contact</Link>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 );
