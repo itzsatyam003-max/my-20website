@@ -119,10 +119,21 @@ export const Tools = () => (
   />
 );
 export const Portfolio = () => (
-  <Placeholder
-    title="Portfolio"
-    description="Showcase your projects (placeholder)."
-  />
+  <section className="container py-14">
+    <h1 className="text-3xl font-bold">Portfolio</h1>
+    <p className="mt-2 text-foreground/70">Showcase of recent work.</p>
+    <div className="mt-6">
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets%2F58fdd6e3817b4e5895807a27ed6b349f%2F310ec67246d04e4abaec3754c951e467?format=webp&width=800"
+        alt="Certificate of Achievement — Satyam Sharma"
+        loading="lazy"
+        className="w-full h-auto rounded-xl border shadow"
+      />
+    </div>
+    <div className="mt-6">
+      <a className="btn-gradient inline-flex items-center rounded-full px-5 py-2.5 font-semibold text-white" href="/">Back to Home</a>
+    </div>
+  </section>
 );
 export const Contact = () => (
   <section className="bg-gradient-to-br from-[#283c86] to-[#45a247] text-white py-16">
