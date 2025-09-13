@@ -24,28 +24,38 @@ import {
 
 const queryClient = new QueryClient();
 
+function InnerApp() {
+  const location = useLocation();
+  const showFooter = location.pathname === "/";
+  return (
+    <>
+      <SiteHeader />
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/create-resume" element={<CreateResume />} />
+        <Route path="/create-biodata" element={<CreateBiodata />} />
+        <Route path="/free-computer-courses" element={<FreeCourses />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/tools" element={<Tools />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      {showFooter && <SiteFooter />}
+    </>
+  );
+}
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <SiteHeader />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/create-resume" element={<CreateResume />} />
-          <Route path="/create-biodata" element={<CreateBiodata />} />
-          <Route path="/free-computer-courses" element={<FreeCourses />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/features" element={<Features />} />
-          <Route path="/tools" element={<Tools />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <SiteFooter />
+        <InnerApp />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
