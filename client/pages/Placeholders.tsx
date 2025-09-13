@@ -70,7 +70,7 @@ export const About = () => (
         <div className="rounded-lg border bg-white p-6">
           <h3 className="text-lg font-semibold">हमारी खास बात</h3>
           <ul className="mt-3 space-y-2 text-sm text-foreground/80">
-            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />लोकल फोकस — Begusarai समुदाय की ज़रूरतों के लिए बनाया गया</li>
+            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />लोकल फोकस — Begusarai समु��ाय की ज़रूरतों के लिए बनाया गया</li>
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />सहज इंटरफ़ेस — सरल और उपयोग में आसान</li>
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />तेज़ समाधान — समय बचाने वाले टूल्स</li>
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />भरोसेमंद — CSC ऑपरेटरों की आवश्यकताओं के अनुरूप</li>
@@ -80,16 +80,8 @@ export const About = () => (
         <div className="rounded-lg border bg-white p-6">
           <h3 className="text-lg font-semibold">हमारा मिशन</h3>
           <p className="mt-3 text-sm text-foreground/80">
-            स्थानीय समुदाय को डिजिटल रूप से सशक्त बनाना — ताकि सरकारी और निजी दस्तावेज़ आसानी से, तेज़ और सुरक्षित तरीके से पूरे हो सकें।
+            स्थानीय समुदाय को डिजिटल रूप से सशक्त बनाना — ताकि सरकारी और निजी दस्तावेज़ आसानी से, तेज़ और सुरक्षित तरीके से ��ूरे हो सकें।
           </p>
-          <div className="mt-4">
-            <Link
-              to="/contact"
-              className="inline-flex items-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90"
-            >
-              संपर्क करें
-            </Link>
-          </div>
         </div>
       </div>
 
@@ -100,8 +92,7 @@ export const About = () => (
             <p className="text-sm text-foreground/70">हमसे बात करें या सीधे टूल्स सेक्शन देखें।</p>
           </div>
           <div className="flex gap-3">
-            <Link to="/tools" className="inline-flex items-center rounded-md border px-4 py-2 text-sm font-semibold">Tools</Link>
-            <a href="https://api.whatsapp.com/send/?phone=917520663547&text=hello+satyam&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-md bg-foreground px-4 py-2 text-sm font-semibold text-background pointer-events-auto cursor-pointer">Contact</a>
+            <a href="https://api.whatsapp.com/send/?phone=917520663547&text=hello+satyam&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-md bg-[#094BF3] lg:bg-foreground px-4 py-2 text-sm font-semibold text-background pointer-events-auto cursor-pointer">Contact</a>
           </div>
         </div>
       </div>
