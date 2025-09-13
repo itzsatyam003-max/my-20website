@@ -153,14 +153,14 @@ export default function ToolsGrid() {
               href={href}
               target={targetBlank ? "_blank" : undefined}
               rel={targetBlank ? "noopener noreferrer" : undefined}
-              className={cn("h-full min-h-[120px] rounded-xl border bg-white p-4 shadow-sm transition-shadow hover:shadow-md cursor-pointer pointer-events-auto flex", extraCardClassName)}
+              className={cn("h-full min-h-[120px] rounded-xl border border-pink-100 bg-white/90 backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer pointer-events-auto flex", extraCardClassName)}
             >
               {CardInner}
             </a>
           ) : (
             <div
               key={title}
-              className={cn("h-full min-h-[120px] rounded-xl border bg-white p-4 shadow-sm transition-shadow hover:shadow-md", extraCardClassName)}
+              className={cn("h-full min-h-[120px] rounded-xl border border-pink-100 bg-white/90 backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5", extraCardClassName)}
             >
               {CardInner}
             </div>
