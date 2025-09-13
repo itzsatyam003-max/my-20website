@@ -70,7 +70,7 @@ export const About = () => (
         <div className="rounded-lg border bg-white p-6">
           <h3 className="text-lg font-semibold">हमारी खास बात</h3>
           <ul className="mt-3 space-y-2 text-sm text-foreground/80">
-            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />लोकल फोकस — Begusarai समु��ाय की ज़रूरतों के लिए बनाया गया</li>
+            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />लोकल फोकस — Begusarai समुदाय की ज़रूरतों के लिए बनाया गया</li>
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />सहज इंटरफ़ेस — सरल और उपयोग में आसान</li>
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />तेज़ समाधान — समय बचाने वाले टूल्स</li>
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />भरोसेमंद — CSC ऑपरेटरों की आवश्यकताओं के अनुरूप</li>
@@ -80,7 +80,7 @@ export const About = () => (
         <div className="rounded-lg border bg-white p-6">
           <h3 className="text-lg font-semibold">हमारा मिशन</h3>
           <p className="mt-3 text-sm text-foreground/80">
-            स्थानीय समुदाय को डिजिटल रूप से सशक्त बनाना — ताकि सरकारी और निजी दस्तावेज़ आसानी से, तेज़ और सुरक्षित तरीके से ��ूरे हो सकें।
+            स्थानीय समुदाय को डिजिटल रूप से सशक्त बनाना — ताकि सरकारी और निजी दस्तावेज़ आसानी से, तेज़ और सुरक्षित तरीके से पूरे हो सकें।
           </p>
         </div>
       </div>
@@ -125,8 +125,39 @@ export const Portfolio = () => (
   />
 );
 export const Contact = () => (
-  <Placeholder
-    title="Contact"
-    description="Get in touch with us (placeholder)."
-  />
+  <section className="bg-gradient-to-br from-[#283c86] to-[#45a247] text-white py-16">
+    <div className="container flex min-h-[70vh] items-center justify-center">
+      <div className="w-full max-w-md rounded-2xl bg-black/70 p-8 text-center shadow-xl">
+        <h2 className="mb-2 text-2xl font-bold text-[#ffcc00]">हमसे संपर्क करें</h2>
+        <p className="text-sm">आपके सुझाव और प्रश्नों का स्वागत है।</p>
+
+        <div className="mt-4 space-y-2 text-sm">
+          <p>
+            <strong className="text-[#ffcc00]">पता:</strong> पंसल्ला, बेगूसराय, बिहार
+          </p>
+          <p>
+            <strong className="text-[#ffcc00]">फोन:</strong>{' '}
+            <a href="tel:+917520663547" className="text-[#ffcc00] underline-offset-2 hover:underline">
+              +91-7520663547
+            </a>
+          </p>
+          <p>
+            <strong className="text-[#ffcc00]">ईमेल:</strong>{' '}
+            <a href="mailto:satya763190@gmail.com" className="text-[#ffcc00] underline-offset-2 hover:underline">
+              satya763190@gmail.com
+            </a>
+          </p>
+        </div>
+
+        <a
+          href="https://wa.me/917520663547"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-block rounded-lg bg-[#25D366] px-5 py-2 font-semibold text-white transition-colors hover:bg-[#1da851]"
+        >
+          💬 WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
 );
