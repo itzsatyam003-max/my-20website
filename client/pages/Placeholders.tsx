@@ -101,7 +101,7 @@ export const About = () => (
           </div>
           <div className="flex gap-3">
             <Link to="/tools" className="inline-flex items-center rounded-md border px-4 py-2 text-sm font-semibold">Tools</Link>
-            <Link to="/contact" className="inline-flex items-center rounded-md bg-foreground px-4 py-2 text-sm font-semibold text-background">Contact</Link>
+            <a href="https://api.whatsapp.com/send/?phone=917520663547&text=hello+satyam&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-md bg-foreground px-4 py-2 text-sm font-semibold text-background pointer-events-auto cursor-pointer">Contact</a>
           </div>
         </div>
       </div>
