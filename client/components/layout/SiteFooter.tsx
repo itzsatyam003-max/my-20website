@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function SiteFooter() {
   return (
-    <footer className="mt-20 border-t bg-gradient-to-r from-pink-50 to-purple-50 dark:bg-none dark:bg-neutral-900">
-      <div className="container py-12 grid gap-8 md:grid-cols-4">
+    <footer className="mt-20 border-t border-slate-200 dark:border-slate-800 bg-gradient-to-r from-pink-50 to-purple-50 dark:bg-none dark:bg-neutral-900">
+      <div className="container py-12 grid gap-8 md:grid-cols-4 max-[991px]:pb-[50px] dark:max-[991px]:bg-black">
         <div>
           <div className="flex items-center gap-2">
             <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground font-bold">
@@ -14,7 +14,7 @@ export default function SiteFooter() {
             </span>
           </div>
           <p className="mt-4 text-sm font-semibold text-foreground/80 max-w-xs">
-            यहां CSC से जुड़े सभी कामों के लिए टूल उपलब्ध हैं
+            यहां CSC से जुड़े सभी का���ों के लिए टूल उपलब्ध हैं
           </p>
         </div>
         <div>
@@ -74,8 +74,8 @@ export default function SiteFooter() {
           </div>
         </div>
       </div>
-      <div className="border-t">
-        <div className="container py-6 text-xs text-foreground/70">
+      <div className="border-t border-slate-200 dark:border-slate-800">
+        <div className="container py-6 text-xs text-foreground/70 dark:text-slate-200/70 dark:max-[991px]:bg-black">
           © 2025 ResumeGround. All Rights Reserved.
         </div>
       </div>
