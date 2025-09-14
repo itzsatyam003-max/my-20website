@@ -14,7 +14,7 @@ export default function SiteFooter() {
             </span>
           </div>
           <p className="mt-4 text-sm font-semibold text-foreground/80 max-w-xs">
-            यहां CSC से जुड़े सभी का���ों के लिए टूल उपलब्ध हैं
+            यहां CSC से जुड़े सभी कामों के लिए टूल उपलब्ध हैं
           </p>
         </div>
         <div>
@@ -72,11 +72,6 @@ export default function SiteFooter() {
               ◎
             </a>
           </div>
-        </div>
-      </div>
-      <div className="border-t border-slate-200 dark:border-slate-800">
-        <div className="container py-6 text-xs text-foreground/70 dark:text-slate-200/70 dark:max-[991px]:bg-black">
-          © 2025 ResumeGround. All Rights Reserved.
         </div>
       </div>
     </footer>
