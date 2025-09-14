@@ -44,7 +44,7 @@ export const FreeCourses = () => (
 export const About = () => (
   <section id="about" aria-labelledby="about-heading" className="py-12 md:py-16">
     <div className="container space-y-8 md:space-y-10">
-      <div className="rounded-xl border bg-white p-6 md:p-10 shadow-sm">
+      <div className="rounded-xl border bg-white dark:bg-neutral-900 dark:border-neutral-800 p-6 md:p-10 shadow-sm">
         <h2
           id="about-heading"
           className="font-bold text-[15px] text-[#E2230F] lg:text-[30px] lg:leading-[36px] lg:text-foreground"
@@ -57,17 +57,17 @@ export const About = () => (
       </div>
 
       <div className="grid gap-6 md:grid-cols-3">
-        <div className="rounded-lg border bg-white p-6">
+        <div className="rounded-lg border bg-white dark:bg-neutral-900 dark:border-neutral-800 p-6">
           <h3 className="text-lg font-semibold">हम जो सेवा देते हैं</h3>
           <ul className="mt-3 space-y-2 text-sm text-foreground/80">
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />PDF एडिटिंग, कन्वर्ज़न और साइज बदलना (Compress, Convert, Edit)</li>
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />PAN / Aadhar संबंधित टूल्स और फॉर्म सपोर्ट</li>
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />रिज़्यूमे एडिटिंग, QR कोड जनरेशन और इमेज बैकग्राउंड रिमूवल</li>
-            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />दस्तावेज़ जोड़ना, ��ेज रिय��ेंज करना आदि</li>
+            <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" />दस्तावेज़ जोड़ना, ��ेज रियरेंज करना आदि</li>
           </ul>
         </div>
 
-        <div className="rounded-lg border bg-white p-6">
+        <div className="rounded-lg border bg-white dark:bg-neutral-900 dark:border-neutral-800 p-6">
           <h3 className="text-lg font-semibold">हमारी खास बात</h3>
           <ul className="mt-3 space-y-2 text-sm text-foreground/80">
             <li className="flex items-start gap-2"><span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" />लोकल फोकस — Begusarai समुदाय की ज़रूरतों के लिए बनाया गया</li>
@@ -77,7 +77,7 @@ export const About = () => (
           </ul>
         </div>
 
-        <div className="rounded-lg border bg-white p-6">
+        <div className="rounded-lg border bg-white dark:bg-neutral-900 dark:border-neutral-800 p-6">
           <h3 className="text-lg font-semibold">हमारा मिशन</h3>
           <p className="mt-3 text-sm text-foreground/80">
             स्थानीय समुदाय को डिजिटल रूप से सशक्त बनाना — ताकि सरकारी और निजी दस्तावेज़ आसानी से, तेज़ और सुरक्षित तरीके से पूरे हो सकें।
@@ -85,7 +85,7 @@ export const About = () => (
         </div>
       </div>
 
-      <div className="rounded-lg border bg-primary/5 p-6 md:p-8">
+      <div className="rounded-lg border bg-primary/5 dark:bg-neutral-800 dark:border-neutral-700 p-6 md:p-8">
         <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
           <div>
             <h4 className="text-base font-semibold">क्या आप किसी विशेष दस्तावेज़ में मदद चाहते हैं?</h4>
