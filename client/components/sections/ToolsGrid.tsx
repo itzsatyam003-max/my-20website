@@ -124,7 +124,7 @@ import { cn } from "@/lib/utils";
 
 export default function ToolsGrid() {
   return (
-    <section className="container py-12 md:py-16">
+    <section className="container py-12 md:py-16 max-[991px]:bg-[#fdf3fa]">
       <div className="grid items-stretch gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {TOOLS.map(({ title, desc, Icon, href, targetBlank, emphasize, extraCardClassName }) => {
           const CardInner = (
