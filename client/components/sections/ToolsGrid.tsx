@@ -124,7 +124,7 @@ import { cn } from "@/lib/utils";
 
 export default function ToolsGrid() {
   return (
-    <section className="container py-12 md:py-16 max-[991px]:bg-[#fdf3fa]">
+    <section className="container py-12 md:py-16 max-[991px]:bg-[#fdf3fa] dark:bg-transparent">
       <div className="grid items-stretch gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {TOOLS.map(({ title, desc, Icon, href, targetBlank, emphasize, extraCardClassName }) => {
           const CardInner = (
@@ -153,14 +153,14 @@ export default function ToolsGrid() {
               href={href}
               target={targetBlank ? "_blank" : undefined}
               rel={targetBlank ? "noopener noreferrer" : undefined}
-              className={cn("h-full min-h-[120px] rounded-xl border border-pink-100 bg-white/90 backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer pointer-events-auto flex", extraCardClassName)}
+              className={cn("h-full min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer pointer-events-auto flex", extraCardClassName)}
             >
               {CardInner}
             </a>
           ) : (
             <div
               key={title}
-              className={cn("h-full min-h-[120px] rounded-xl border border-pink-100 bg-white/90 backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5", extraCardClassName)}
+              className={cn("h-full min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5", extraCardClassName)}
             >
               {CardInner}
             </div>
