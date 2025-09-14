@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import ThemeToggle from "./ThemeToggle";
 
 function NavItem({ to, children }: { to: string; children: React.ReactNode }) {
   return (
