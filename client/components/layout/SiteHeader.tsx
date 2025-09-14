@@ -29,6 +29,7 @@ export default function SiteHeader() {
           <NavItem to="/about">About</NavItem>
           <NavItem to="/portfolio">Portfolio</NavItem>
           <NavItem to="/contact">Contact</NavItem>
+          <ThemeToggle />
         </nav>
       </div>
     </header>
