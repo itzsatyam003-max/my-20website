@@ -122,7 +122,7 @@ const TOOLS: Tool[] = [
     emphasize: true,
   },
   {
-    title: "आय प्रमाण पत्र",
+    title: "आय ��्रमाण पत्र",
     desc: "Apply for Income Certificate (Bihar RTPS).",
     Icon: IndianRupee,
     href: "https://statuesque-piroshki-d36c87.netlify.app/",
@@ -184,8 +184,8 @@ export default function ToolsGrid() {
               <a
                 key={title}
                 href={href}
-                target={targetBlank ? "_blank" : undefined}
-                rel={targetBlank ? "noopener noreferrer" : undefined}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={cn(
                   "h-full min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer pointer-events-auto flex",
                   extraCardClassName,
