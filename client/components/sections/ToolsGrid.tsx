@@ -148,8 +148,8 @@ import { cn } from "@/lib/utils";
 
 export default function ToolsGrid() {
   return (
-    <section className="container py-12 md:py-16 max-[991px]:bg-transparent dark:bg-transparent overflow-x-auto">
-      <div className="grid items-stretch gap-4 grid-cols-4">
+    <section className="container py-12 md:py-16 max-[991px]:bg-transparent dark:bg-transparent">
+      <div className="grid items-stretch gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {TOOLS.map(
           ({
             title,
