@@ -22,7 +22,9 @@ export default function SiteHeader() {
   return (
     <header className="w-full bg-white text-black shadow dark:bg-black dark:text-white">
       <div className="container flex h-10 items-center justify-between md:h-12 max-[991px]:bg-transparent">
-        <div className="text-sm font-extrabold tracking-widest text-black dark:text-white">BEGUSARAI</div>
+        <div className="text-sm font-extrabold tracking-widest text-black dark:text-white">
+          BEGUSARAI
+        </div>
         <nav className="flex items-center gap-2 md:gap-4">
           <NavItem to="/">Home</NavItem>
           <NavItem to="/features">Features</NavItem>

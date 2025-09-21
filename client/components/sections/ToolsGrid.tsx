@@ -153,46 +153,62 @@ export default function ToolsGrid() {
   return (
     <section className="container py-12 md:py-16 max-[991px]:bg-transparent dark:bg-transparent">
       <div className="grid items-stretch gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {TOOLS.map(({ title, desc, Icon, href, targetBlank, emphasize, extraCardClassName }) => {
-          const CardInner = (
-            <div className="flex items-start gap-3">
-              <div className="flex items-center justify-center text-foreground">
-                <Icon className="h-5 w-5" />
+        {TOOLS.map(
+          ({
+            title,
+            desc,
+            Icon,
+            href,
+            targetBlank,
+            emphasize,
+            extraCardClassName,
+          }) => {
+            const CardInner = (
+              <div className="flex items-start gap-3">
+                <div className="flex items-center justify-center text-foreground">
+                  <Icon className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold">
+                    {emphasize ? (
+                      <p>
+                        <strong>{title}</strong>
+                      </p>
+                    ) : (
+                      title
+                    )}
+                  </h3>
+                  <p className="mt-1 text-xs text-foreground/70">{desc}</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-sm font-semibold">
-                  {emphasize ? (
-                    <p>
-                      <strong>{title}</strong>
-                    </p>
-                  ) : (
-                    title
-                  )}
-                </h3>
-                <p className="mt-1 text-xs text-foreground/70">{desc}</p>
-              </div>
-            </div>
-          );
+            );
 
-          return href ? (
-            <a
-              key={title}
-              href={href}
-              target={targetBlank ? "_blank" : undefined}
-              rel={targetBlank ? "noopener noreferrer" : undefined}
-              className={cn("h-full min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer pointer-events-auto flex", extraCardClassName)}
-            >
-              {CardInner}
-            </a>
-          ) : (
-            <div
-              key={title}
-              className={cn("h-full min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5", extraCardClassName)}
-            >
-              {CardInner}
-            </div>
-          );
-        })}
+            return href ? (
+              <a
+                key={title}
+                href={href}
+                target={targetBlank ? "_blank" : undefined}
+                rel={targetBlank ? "noopener noreferrer" : undefined}
+                className={cn(
+                  "h-full min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer pointer-events-auto flex",
+                  extraCardClassName,
+                )}
+              >
+                {CardInner}
+              </a>
+            ) : (
+              <div
+                key={title}
+                className={cn(
+                  "h-full min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5",
+                  extraCardClassName,
+                )}
+              >
+                {CardInner}
+              </div>
+            );
+          },
+        )}
       </div>
     </section>
   );
