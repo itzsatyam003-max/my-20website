@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
   return (
     <section className="container py-8">
       <div className="text-center">
-        <h2 className="text-2xl md:text-3xl font-bold">Why use CSC Begusarai?</h2>
+        <h2 className="text-2xl md:text-3xl font-bold font-sans tracking-tight">Why use CSC Begusarai?</h2>
         <p className="mt-2 text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
           CSC Begusarai offers trusted, government-backed e-services with local
           support and quick processing tailored for residents of Begusarai.
