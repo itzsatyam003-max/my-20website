@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function SiteFooter() {
   return (
-    <footer className="mt-20 border-t border-slate-200 dark:border-slate-800 bg-gradient-to-r from-pink-50 to-purple-50 dark:bg-none dark:bg-neutral-900">
-      <div className="container py-12 grid gap-8 md:grid-cols-4 max-[991px]:pb-[50px] dark:max-[991px]:bg-black">
+    <footer className="mt-20 border-t border-slate-200 dark:border-slate-800 bg-neutral-900">
+      <div className="container py-12 grid gap-8 md:grid-cols-4 max-[991px]:pb-[50px] max-[991px]:bg-black">
         <div>
           <div className="flex items-center gap-2">
             <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground font-bold">
