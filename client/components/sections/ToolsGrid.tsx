@@ -118,6 +118,30 @@ const TOOLS: Tool[] = [
     targetBlank: true,
     emphasize: true,
   },
+  {
+    title: "आय प्रमाण पत्र",
+    desc: "Apply for Income Certificate in Bihar (RTPS portal).",
+    Icon: FileText,
+    href: "https://serviceonline.bihar.gov.in/getServiceDesc.html?serviceId=8900005",
+    targetBlank: true,
+    emphasize: true,
+  },
+  {
+    title: "निवास प्रमाण पत्र",
+    desc: "Apply for Residence Certificate in Bihar (RTPS portal).",
+    Icon: FileText,
+    href: "https://serviceonline.bihar.gov.in/getServiceDesc.html?serviceId=8910003",
+    targetBlank: true,
+    emphasize: true,
+  },
+  {
+    title: "जाति प्रमाण पत्र",
+    desc: "Apply for Caste Certificate in Bihar (RTPS portal).",
+    Icon: FileText,
+    href: "https://serviceonline.bihar.gov.in/getServiceDesc.html?serviceId=4650006",
+    targetBlank: true,
+    emphasize: true,
+  },
 ];
 
 import { cn } from "@/lib/utils";
