@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
             key={f.title}
             className="flex items-center gap-4 rounded-lg border bg-card/90 dark:bg-card/60 dark:border-neutral-800 p-3 shadow-sm"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-md bg-muted/30 dark:bg-muted/20 text-2xl">
+            <div className="flex items-center justify-center text-foreground">
               {f.icon}
             </div>
             <div>
