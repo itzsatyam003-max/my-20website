@@ -198,9 +198,10 @@ export default function ToolsGrid() {
               <div
                 key={title}
                 className={cn(
-                  "h-full min-h-[140px] sm:min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm p-5 sm:p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 pointer-events-auto",
+                  "h-full min-h-[140px] sm:min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm max-[991px]:backdrop-blur-none p-5 sm:p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 pointer-events-auto",
                   extraCardClassName,
                 )}
+                style={{ willChange: 'transform', transform: 'translateZ(0)', backfaceVisibility: 'hidden' }}
               >
                 {CardInner}
               </div>
