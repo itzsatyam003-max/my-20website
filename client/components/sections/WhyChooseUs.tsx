@@ -1,10 +1,12 @@
+import { ShieldCheck, Users, Zap, FileText, Globe, Lock } from "lucide-react";
+
 const FEATURES = [
-  { title: "100% Free – Government Assisted Services", icon: "💯" },
-  { title: "Local Help – CSC Begusarai Support", icon: "🤝" },
-  { title: "Fast Processing – Minimal Waiting", icon: "⚡" },
-  { title: "Document Assistance – End-to-end help", icon: "📄" },
-  { title: "Easy Online Access – From anywhere", icon: "🌐" },
-  { title: "Secure & Private – Your data is safe", icon: "🔒" },
+  { title: "100% Free – Government Assisted Services", icon: <ShieldCheck className="h-5 w-5" /> },
+  { title: "Local Help – CSC Begusarai Support", icon: <Users className="h-5 w-5" /> },
+  { title: "Fast Processing – Minimal Waiting", icon: <Zap className="h-5 w-5" /> },
+  { title: "Document Assistance – End-to-end help", icon: <FileText className="h-5 w-5" /> },
+  { title: "Easy Online Access – From anywhere", icon: <Globe className="h-5 w-5" /> },
+  { title: "Secure & Private – Your data is safe", icon: <Lock className="h-5 w-5" /> },
 ];
 
 export default function WhyChooseUs() {
