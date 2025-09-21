@@ -1,6 +1,4 @@
 import ToolsGrid from "@/components/sections/ToolsGrid";
-
-import ToolsGrid from "@/components/sections/ToolsGrid";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 
 export default function Index() {
