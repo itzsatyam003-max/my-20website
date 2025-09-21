@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
               {f.icon}
             </div>
             <div>
-              <h3 className="text-sm font-semibold leading-tight font-sans text-white">{f.title}</h3>
+              <h3 className="text-sm font-semibold leading-tight font-sans text-foreground">{f.title}</h3>
             </div>
           </div>
         ))}
