@@ -13,25 +13,25 @@ export default function WhyChooseUs() {
   return (
     <section className="container py-8">
       <div className="text-center">
-        <h2 className="text-2xl md:text-3xl font-bold font-sans tracking-tight">Why use CSC Begusarai?</h2>
+        <h2 className="text-2xl md:text-3xl font-bold font-sans tracking-tight">बेगुसराई</h2>
         <p className="mt-2 text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
-          CSC Begusarai offers trusted, government-backed e-services with local
-          support and quick processing tailored for residents of Begusarai.
+          why chose us csc Begusarai offers trusted, government-backed e-services
+          with local support and quick processing tailored for residents of
+          Begusarai.
         </p>
       </div>
 
-      <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+      <div className="mt-8 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         {FEATURES.map((f) => (
           <div
             key={f.title}
-            className="flex items-center gap-4 rounded-lg border bg-card/90 dark:bg-card/60 dark:border-neutral-800 p-3 shadow-sm"
+            className="flex items-center gap-4 rounded-lg border border-[rgb(38,38,38)] bg-black/60 p-3 shadow-sm"
           >
-            <div className="flex items-center justify-center text-foreground">
+            <div className="text-foreground">
               {f.icon}
             </div>
             <div>
-              <h3 className="text-sm font-semibold leading-tight font-sans">{f.title}</h3>
-              {/* optional short subtitle removed to keep compact look like screenshot */}
+              <h3 className="text-sm font-semibold leading-tight font-sans text-white">{f.title}</h3>
             </div>
           </div>
         ))}
