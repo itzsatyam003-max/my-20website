@@ -21,7 +21,7 @@ export default function WhyChooseUs() {
         {FEATURES.map((f) => (
           <div
             key={f.title}
-            className="rounded-xl border bg-white p-6 shadow-sm"
+            className="rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 p-6 shadow-sm"
           >
             <div className="text-4xl">{f.icon}</div>
             <h3 className="mt-4 text-lg font-semibold">{f.title}</h3>
