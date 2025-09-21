@@ -114,7 +114,7 @@ const TOOLS: Tool[] = [
     emphasize: true,
   },
   {
-    title: "रिज़्यूमे एड��ट",
+    title: "रिज़्यूमे एडिट",
     desc: "Create and edit resume online.",
     Icon: FileText,
     href: "https://resumbycsc.netlify.app/",
@@ -187,9 +187,10 @@ export default function ToolsGrid() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
-                  "h-full min-h-[140px] sm:min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm p-5 sm:p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer pointer-events-auto flex",
+                  "h-full min-h-[140px] sm:min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm max-[991px]:backdrop-blur-none p-5 sm:p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer pointer-events-auto flex",
                   extraCardClassName,
                 )}
+                style={{ willChange: 'transform', transform: 'translateZ(0)', backfaceVisibility: 'hidden' }}
               >
                 {CardInner}
               </a>
