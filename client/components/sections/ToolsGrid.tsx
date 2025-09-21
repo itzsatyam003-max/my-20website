@@ -163,10 +163,10 @@ export default function ToolsGrid() {
             const CardInner = (
               <div className="flex items-start gap-3">
                 <div className="flex items-center justify-center text-foreground">
-                  <Icon className="h-5 w-5" />
+                  <Icon className="h-6 w-6 sm:h-5 sm:w-5" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold">
+                  <h3 className="text-base sm:text-sm font-semibold">
                     {emphasize ? (
                       <p>
                         <strong>{title}</strong>
