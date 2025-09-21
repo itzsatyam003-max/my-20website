@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
         {FEATURES.map((f) => (
           <div
             key={f.title}
-            className="flex items-center gap-4 rounded-lg border border-[rgb(38,38,38)] bg-black/60 p-3 shadow-sm"
+            className="flex items-center gap-4 rounded-lg border bg-card/90 dark:bg-card/60 dark:border-neutral-800 p-3 shadow-sm"
           >
             <div className="text-foreground">
               {f.icon}
