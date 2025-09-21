@@ -1,5 +1,8 @@
 import ToolsGrid from "@/components/sections/ToolsGrid";
 
+import ToolsGrid from "@/components/sections/ToolsGrid";
+import WhyChooseUs from "@/components/sections/WhyChooseUs";
+
 export default function Index() {
   return (
     <main className="max-[991px]:pb-[84px]">
@@ -12,6 +15,7 @@ export default function Index() {
         />
       </section>
       <ToolsGrid />
+      <WhyChooseUs />
     </main>
   );
 }
