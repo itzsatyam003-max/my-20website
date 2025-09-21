@@ -28,7 +28,7 @@ type Tool = {
 
 const TOOLS: Tool[] = [
   {
-    title: "बैक��्राउंड हटाएं",
+    title: "बैकग्राउंड हटाएं",
     desc: "Remove image background instantly.",
     Icon: Eraser,
     href: "https://www.remove.bg/",
@@ -131,8 +131,7 @@ const TOOLS: Tool[] = [
     title: "निवास प्रमाण पत्र",
     desc: "Apply for Residence Certificate (Bihar RTPS).",
     Icon: Home,
-    href: "https://serviceonline.bihar.gov.in/getServiceDesc.html?serviceId=8910003",
-    targetBlank: true,
+    href: "https://residence-certificate.netlify.app/",
     emphasize: true,
   },
   {
