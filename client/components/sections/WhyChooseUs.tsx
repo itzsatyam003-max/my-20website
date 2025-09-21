@@ -9,22 +9,28 @@ const FEATURES = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="container py-16">
+    <section className="container py-8">
       <div className="text-center">
-        <h2 className="text-3xl font-bold">Why use CSC Begusarai?</h2>
-        <p className="mt-2 text-foreground/70">
+        <h2 className="text-2xl md:text-3xl font-bold">Why use CSC Begusarai?</h2>
+        <p className="mt-2 text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
           CSC Begusarai offers trusted, government-backed e-services with local
           support and quick processing tailored for residents of Begusarai.
         </p>
       </div>
-      <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
         {FEATURES.map((f) => (
           <div
             key={f.title}
-            className="rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 p-6 shadow-sm"
+            className="flex items-center gap-4 rounded-lg border bg-card/90 dark:bg-card/60 dark:border-neutral-800 p-3 shadow-sm"
           >
-            <div className="text-4xl">{f.icon}</div>
-            <h3 className="mt-4 text-lg font-semibold">{f.title}</h3>
+            <div className="flex h-10 w-10 items-center justify-center rounded-md bg-muted/30 dark:bg-muted/20 text-2xl">
+              {f.icon}
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold leading-tight">{f.title}</h3>
+              {/* optional short subtitle removed to keep compact look like screenshot */}
+            </div>
           </div>
         ))}
       </div>
