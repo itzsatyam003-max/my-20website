@@ -32,7 +32,7 @@ const TOOLS: Tool[] = [
     desc: "Remove image background instantly.",
     Icon: Eraser,
     href: "https://www.remove.bg/",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -40,7 +40,7 @@ const TOOLS: Tool[] = [
     desc: "Extract text from images (OCR).",
     Icon: ScanText,
     href: "https://www.imagetotext.info/",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -48,7 +48,7 @@ const TOOLS: Tool[] = [
     desc: "Compress or resize images to specific KB/MB.",
     Icon: ImageIcon,
     href: "https://www.resizepixel.com/reduce-image-in-kb",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -56,7 +56,7 @@ const TOOLS: Tool[] = [
     desc: "Merge, split, compress, and edit PDFs.",
     Icon: Files,
     href: "https://www.ilovepdf.com/merge_pdf",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -64,7 +64,7 @@ const TOOLS: Tool[] = [
     desc: "Apply or update PAN via NSDL portal.",
     Icon: IdCard,
     href: "https://onlineservices.proteantech.in/paam/endUserRegisterContact.html",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -72,7 +72,7 @@ const TOOLS: Tool[] = [
     desc: "Generate Instant e-PAN from Income Tax portal.",
     Icon: Zap,
     href: "https://www.incometax.gov.in/iec/foportal/",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -80,15 +80,15 @@ const TOOLS: Tool[] = [
     desc: "Resize PAN photo or documents to required size.",
     Icon: FileImage,
     href: "https://pancardresizer.com/",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
     title: "आधार कार्ड",
     desc: "Download, update, and check Aadhaar services (UIDAI).",
     Icon: Fingerprint,
-    href: "https://uidai.gov.in/",
-    targetBlank: true,
+    href: "https://myaadhaar.uidai.gov.in/en_IN",
+
     emphasize: true,
     extraCardClassName: "max-[991px]:pt-[15px]",
   },
@@ -97,7 +97,7 @@ const TOOLS: Tool[] = [
     desc: "Create simple bills and invoices online.",
     Icon: Receipt,
     href: "https://bill-ganrater.netlify.app/",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -106,11 +106,11 @@ const TOOLS: Tool[] = [
     Icon: Repeat,
   },
   {
-    title: "क्यूआर कोड टूल",
+    title: "क्यूआर कोड टूल्स",
     desc: "Create QR codes (URL, text, etc.).",
     Icon: QrCode,
     href: "https://qr-code.io/qr?step=1",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -118,31 +118,28 @@ const TOOLS: Tool[] = [
     desc: "Create and edit resume online.",
     Icon: FileText,
     href: "https://resumbycsc.netlify.app/",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
     title: "आय प्रमाण पत्र",
     desc: "Apply for Income Certificate (Bihar RTPS).",
     Icon: IndianRupee,
-    href: "https://serviceonline.bihar.gov.in/getServiceDesc.html?serviceId=8900005",
-    targetBlank: true,
+    href: "https://statuesque-piroshki-d36c87.netlify.app/",
     emphasize: true,
   },
   {
     title: "निवास प्रमाण पत्र",
     desc: "Apply for Residence Certificate (Bihar RTPS).",
     Icon: Home,
-    href: "https://serviceonline.bihar.gov.in/getServiceDesc.html?serviceId=8910003",
-    targetBlank: true,
+    href: "https://residence-certificate.netlify.app/",
     emphasize: true,
   },
   {
     title: "जाति प्रमाण पत्र",
     desc: "Apply for Caste Certificate (Bihar RTPS).",
     Icon: BadgeCheck,
-    href: "https://serviceonline.bihar.gov.in/getServiceDesc.html?serviceId=4650006",
-    targetBlank: true,
+    href: "https://cast-certificate.netlify.app/",
     emphasize: true,
   },
 ];
@@ -152,7 +149,7 @@ import { cn } from "@/lib/utils";
 export default function ToolsGrid() {
   return (
     <section className="container py-12 md:py-16 max-[991px]:bg-transparent dark:bg-transparent">
-      <div className="grid items-stretch gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid items-stretch gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {TOOLS.map(
           ({
             title,
@@ -166,10 +163,10 @@ export default function ToolsGrid() {
             const CardInner = (
               <div className="flex items-start gap-3">
                 <div className="flex items-center justify-center text-foreground">
-                  <Icon className="h-5 w-5" />
+                  <Icon className="h-6 w-6 sm:h-5 sm:w-5" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold">
+                  <h3 className="text-base sm:text-sm font-semibold">
                     {emphasize ? (
                       <p>
                         <strong>{title}</strong>
@@ -187,12 +184,17 @@ export default function ToolsGrid() {
               <a
                 key={title}
                 href={href}
-                target={targetBlank ? "_blank" : undefined}
-                rel={targetBlank ? "noopener noreferrer" : undefined}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={cn(
-                  "h-full min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer pointer-events-auto flex",
+                  "h-full min-h-[140px] sm:min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm max-[991px]:backdrop-blur-none p-5 sm:p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer pointer-events-auto flex",
                   extraCardClassName,
                 )}
+                style={{
+                  willChange: "transform",
+                  transform: "translateZ(0)",
+                  backfaceVisibility: "hidden",
+                }}
               >
                 {CardInner}
               </a>
@@ -200,9 +202,14 @@ export default function ToolsGrid() {
               <div
                 key={title}
                 className={cn(
-                  "h-full min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5",
+                  "h-full min-h-[140px] sm:min-h-[120px] rounded-xl border bg-card/90 dark:bg-card/60 dark:border-neutral-800 max-[991px]:border-white backdrop-blur-sm max-[991px]:backdrop-blur-none p-5 sm:p-4 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 pointer-events-auto",
                   extraCardClassName,
                 )}
+                style={{
+                  willChange: "transform",
+                  transform: "translateZ(0)",
+                  backfaceVisibility: "hidden",
+                }}
               >
                 {CardInner}
               </div>
