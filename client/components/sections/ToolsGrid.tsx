@@ -125,6 +125,7 @@ const TOOLS: Tool[] = [
     title: "आय प्रमाण पत्र",
     desc: "Apply for Income Certificate (Bihar RTPS).",
     Icon: IndianRupee,
+    href: "https://statuesque-piroshki-d36c87.netlify.app/",
     emphasize: true,
   },
   {
