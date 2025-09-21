@@ -106,7 +106,7 @@ const TOOLS: Tool[] = [
     Icon: Repeat,
   },
   {
-    title: "क्यूआर कोड टू��",
+    title: "क्यूआर कोड टूल्स",
     desc: "Create QR codes (URL, text, etc.).",
     Icon: QrCode,
     href: "https://qr-code.io/qr?step=1",
@@ -114,7 +114,7 @@ const TOOLS: Tool[] = [
     emphasize: true,
   },
   {
-    title: "रिज़्यूमे एडिट",
+    title: "रिज़्यूमे एड��ट",
     desc: "Create and edit resume online.",
     Icon: FileText,
     href: "https://resumbycsc.netlify.app/",
