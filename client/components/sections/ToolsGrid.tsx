@@ -87,7 +87,7 @@ const TOOLS: Tool[] = [
     title: "आधार कार्ड",
     desc: "Download, update, and check Aadhaar services (UIDAI).",
     Icon: Fingerprint,
-    href: "https://uidai.gov.in/",
+    href: "https://myaadhaar.uidai.gov.in/en_IN",
 
     emphasize: true,
     extraCardClassName: "max-[991px]:pt-[15px]",
