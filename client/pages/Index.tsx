@@ -2,7 +2,7 @@ import ToolsGrid from "@/components/sections/ToolsGrid";
 
 export default function Index() {
   return (
-    <main className="max-[991px]:pb-[84px] max-[991px]:bg-black">
+    <main className="max-[991px]:pb-[84px]">
       <section className="w-full">
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2F3db88c248e1149ad94412f9a6b970061%2Fc44e56cc9792436fb1792d520e44368b"
