@@ -1,5 +1,5 @@
 /** @import must precede all other statements */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -21,16 +21,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 216 98% 52%; /* #0d6efd */
+    --primary: 340 82% 56%; /* playful pink */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 17% 98%; /* #f8f9fa */
+    --secondary: 320 100% 97%; /* very light pink */
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 17% 98%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 199 100% 41%; /* #0084D1 */
+    --accent: 265 89% 62%; /* purple */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -38,28 +38,28 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 216 98% 52%;
+    --ring: 340 82% 56%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 330 100% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 216 98% 52%;
+    --sidebar-primary: 340 82% 56%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 210 17% 98%;
+    --sidebar-accent: 265 89% 96%;
     --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 216 98% 52%;
+    --sidebar-border: 330 56% 90%;
+    --sidebar-ring: 340 82% 56%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 0 0% 0%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 0 0% 0%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 0 0% 0%;
     --popover-foreground: 210 40% 98%;
 
     --primary: 210 40% 98%;
@@ -71,7 +71,7 @@
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 199 100% 41%;
+    --accent: 265 89% 62%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -79,7 +79,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 216 98% 52%;
+    --ring: 340 82% 56%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -99,6 +99,7 @@
   body {
     @apply bg-background text-foreground;
     font-family:
+      "Fredoka",
       "Poppins",
       ui-sans-serif,
       system-ui,
@@ -117,9 +118,9 @@
   .btn-gradient {
     background-image: linear-gradient(
       90deg,
-      hsl(260 80% 23%),
-      hsl(228 66% 33%),
-      hsl(199 100% 41%)
+      hsl(340 82% 56%),
+      hsl(265 89% 62%),
+      hsl(0 84% 60%)
     );
     background-size: 200% 200%;
     transition:
