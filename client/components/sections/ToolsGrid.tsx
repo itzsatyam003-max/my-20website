@@ -138,8 +138,7 @@ const TOOLS: Tool[] = [
     title: "जाति प्रमाण पत्र",
     desc: "Apply for Caste Certificate (Bihar RTPS).",
     Icon: BadgeCheck,
-    href: "https://serviceonline.bihar.gov.in/getServiceDesc.html?serviceId=4650006",
-    targetBlank: true,
+    href: "https://cast-certificate.netlify.app/",
     emphasize: true,
   },
 ];
