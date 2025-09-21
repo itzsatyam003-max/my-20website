@@ -1,16 +1,19 @@
 import {
-  Edit3,
-  PenTool,
-  Signature,
-  Share2,
-  Search,
-  GitMerge,
-  ArrowUpDown,
-  Users,
-  FileArchive,
+  Eraser,
+  ScanText,
+  Image as ImageIcon,
+  Files,
+  IdCard,
+  Zap,
+  FileImage,
+  Fingerprint,
+  Receipt,
   Repeat,
-  FilePlus2,
+  QrCode,
   FileText,
+  IndianRupee,
+  Home,
+  BadgeCheck,
 } from "lucide-react";
 
 type Tool = {
@@ -27,7 +30,7 @@ const TOOLS: Tool[] = [
   {
     title: "बैकग्राउंड हटाएं",
     desc: "Remove image background instantly.",
-    Icon: Edit3,
+    Icon: Eraser,
     href: "https://www.remove.bg/",
     targetBlank: true,
     emphasize: true,
@@ -35,7 +38,7 @@ const TOOLS: Tool[] = [
   {
     title: "छवि से टेक्स्ट",
     desc: "Extract text from images (OCR).",
-    Icon: PenTool,
+    Icon: ScanText,
     href: "https://www.imagetotext.info/",
     targetBlank: true,
     emphasize: true,
@@ -43,7 +46,7 @@ const TOOLS: Tool[] = [
   {
     title: "छवि आकार बदलें",
     desc: "Compress or resize images to specific KB/MB.",
-    Icon: Signature,
+    Icon: ImageIcon,
     href: "https://www.resizepixel.com/reduce-image-in-kb",
     targetBlank: true,
     emphasize: true,
@@ -51,7 +54,7 @@ const TOOLS: Tool[] = [
   {
     title: "पीडीएफ टूल्स",
     desc: "Merge, split, compress, and edit PDFs.",
-    Icon: Share2,
+    Icon: Files,
     href: "https://www.ilovepdf.com/merge_pdf",
     targetBlank: true,
     emphasize: true,
@@ -59,7 +62,7 @@ const TOOLS: Tool[] = [
   {
     title: "पैन (NSDL)",
     desc: "Apply or update PAN via NSDL portal.",
-    Icon: Search,
+    Icon: IdCard,
     href: "https://onlineservices.proteantech.in/paam/endUserRegisterContact.html",
     targetBlank: true,
     emphasize: true,
@@ -67,7 +70,7 @@ const TOOLS: Tool[] = [
   {
     title: "तत्काल ई-पैन",
     desc: "Generate Instant e-PAN from Income Tax portal.",
-    Icon: GitMerge,
+    Icon: Zap,
     href: "https://www.incometax.gov.in/iec/foportal/",
     targetBlank: true,
     emphasize: true,
@@ -75,7 +78,7 @@ const TOOLS: Tool[] = [
   {
     title: "पैन दस्तावेज़ आकार",
     desc: "Resize PAN photo or documents to required size.",
-    Icon: ArrowUpDown,
+    Icon: FileImage,
     href: "https://pancardresizer.com/",
     targetBlank: true,
     emphasize: true,
@@ -83,7 +86,7 @@ const TOOLS: Tool[] = [
   {
     title: "आधार कार्ड",
     desc: "Download, update, and check Aadhaar services (UIDAI).",
-    Icon: Users,
+    Icon: Fingerprint,
     href: "https://uidai.gov.in/",
     targetBlank: true,
     emphasize: true,
@@ -92,7 +95,7 @@ const TOOLS: Tool[] = [
   {
     title: "बिल जनरेटर",
     desc: "Create simple bills and invoices online.",
-    Icon: FileArchive,
+    Icon: Receipt,
     href: "https://bill-ganrater.netlify.app/",
     targetBlank: true,
     emphasize: true,
@@ -105,7 +108,7 @@ const TOOLS: Tool[] = [
   {
     title: "क्यूआर कोड टूल",
     desc: "Create QR codes (URL, text, etc.).",
-    Icon: FilePlus2,
+    Icon: QrCode,
     href: "https://qr-code.io/qr?step=1",
     targetBlank: true,
     emphasize: true,
@@ -121,15 +124,15 @@ const TOOLS: Tool[] = [
   {
     title: "आय प्रमाण पत्र",
     desc: "Apply for Income Certificate (Bihar RTPS).",
-    Icon: FileText,
+    Icon: IndianRupee,
     href: "https://serviceonline.bihar.gov.in/getServiceDesc.html?serviceId=8900005",
     targetBlank: true,
     emphasize: true,
   },
   {
-    title: "निवा��� प्रमाण पत्र",
+    title: "निवास प्रमाण पत्र",
     desc: "Apply for Residence Certificate (Bihar RTPS).",
-    Icon: FileText,
+    Icon: Home,
     href: "https://serviceonline.bihar.gov.in/getServiceDesc.html?serviceId=8910003",
     targetBlank: true,
     emphasize: true,
@@ -137,7 +140,7 @@ const TOOLS: Tool[] = [
   {
     title: "जाति प्रमाण पत्र",
     desc: "Apply for Caste Certificate (Bihar RTPS).",
-    Icon: FileText,
+    Icon: BadgeCheck,
     href: "https://serviceonline.bihar.gov.in/getServiceDesc.html?serviceId=4650006",
     targetBlank: true,
     emphasize: true,
