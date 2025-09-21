@@ -28,7 +28,7 @@ type Tool = {
 
 const TOOLS: Tool[] = [
   {
-    title: "बैकग्राउंड हटाएं",
+    title: "बैक��्राउंड हटाएं",
     desc: "Remove image background instantly.",
     Icon: Eraser,
     href: "https://www.remove.bg/",
@@ -125,8 +125,6 @@ const TOOLS: Tool[] = [
     title: "आय प्रमाण पत्र",
     desc: "Apply for Income Certificate (Bihar RTPS).",
     Icon: IndianRupee,
-    href: "https://serviceonline.bihar.gov.in/getServiceDesc.html?serviceId=8900005",
-    targetBlank: true,
     emphasize: true,
   },
   {
