@@ -28,7 +28,7 @@ export default function WhyChooseUs() {
               {f.icon}
             </div>
             <div>
-              <h3 className="text-sm font-semibold leading-tight">{f.title}</h3>
+              <h3 className="text-sm font-semibold leading-tight font-sans">{f.title}</h3>
               {/* optional short subtitle removed to keep compact look like screenshot */}
             </div>
           </div>
