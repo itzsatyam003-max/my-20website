@@ -32,7 +32,7 @@ const TOOLS: Tool[] = [
     desc: "Remove image background instantly.",
     Icon: Eraser,
     href: "https://www.remove.bg/",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -40,7 +40,7 @@ const TOOLS: Tool[] = [
     desc: "Extract text from images (OCR).",
     Icon: ScanText,
     href: "https://www.imagetotext.info/",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -48,7 +48,7 @@ const TOOLS: Tool[] = [
     desc: "Compress or resize images to specific KB/MB.",
     Icon: ImageIcon,
     href: "https://www.resizepixel.com/reduce-image-in-kb",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -56,7 +56,7 @@ const TOOLS: Tool[] = [
     desc: "Merge, split, compress, and edit PDFs.",
     Icon: Files,
     href: "https://www.ilovepdf.com/merge_pdf",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -64,7 +64,7 @@ const TOOLS: Tool[] = [
     desc: "Apply or update PAN via NSDL portal.",
     Icon: IdCard,
     href: "https://onlineservices.proteantech.in/paam/endUserRegisterContact.html",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -72,7 +72,7 @@ const TOOLS: Tool[] = [
     desc: "Generate Instant e-PAN from Income Tax portal.",
     Icon: Zap,
     href: "https://www.incometax.gov.in/iec/foportal/",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -80,7 +80,7 @@ const TOOLS: Tool[] = [
     desc: "Resize PAN photo or documents to required size.",
     Icon: FileImage,
     href: "https://pancardresizer.com/",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -88,7 +88,7 @@ const TOOLS: Tool[] = [
     desc: "Download, update, and check Aadhaar services (UIDAI).",
     Icon: Fingerprint,
     href: "https://uidai.gov.in/",
-    targetBlank: true,
+
     emphasize: true,
     extraCardClassName: "max-[991px]:pt-[15px]",
   },
@@ -97,7 +97,7 @@ const TOOLS: Tool[] = [
     desc: "Create simple bills and invoices online.",
     Icon: Receipt,
     href: "https://bill-ganrater.netlify.app/",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -110,7 +110,7 @@ const TOOLS: Tool[] = [
     desc: "Create QR codes (URL, text, etc.).",
     Icon: QrCode,
     href: "https://qr-code.io/qr?step=1",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
@@ -118,7 +118,7 @@ const TOOLS: Tool[] = [
     desc: "Create and edit resume online.",
     Icon: FileText,
     href: "https://resumbycsc.netlify.app/",
-    targetBlank: true,
+
     emphasize: true,
   },
   {
